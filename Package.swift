@@ -11,14 +11,15 @@ let package = Package(
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "OpenSSL",
+            type: .static,
             targets: ["OpenSSL"]
         )
     ],
     targets: [
         .binaryTarget(
             name: "OpenSSL",
-            url: "https://github.com/hantu85/openssl-swiftpm/releases/download/1.1.180/OpenSSL.xcframework.zip",
-            checksum: "0ed0989f1f179f2fdcf94ac080ebea2cc86c43da6a05e6790262a36366d5dc5b"
+            url: "https://github.com/hantu85/openssl-swiftpm/releases/download/1.1.171/OpenSSL.xcframework.zip",
+            checksum: "da438351ed35625802c369a65476b21c7d49bf4a30cce4f91285f925f42bf5b9"
         )
     ]
 )
