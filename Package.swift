@@ -12,10 +12,11 @@ let package = Package(
         .library(
             name: "OpenSSL",
             type: .static,
-            targets: ["OpenSSL"]
+            targets: ["OpenSSL", "OpenSSL-local"]
         )
     ],
     targets: [
+        .target(name: "OpenSSL-local"),
         .binaryTarget(
             name: "OpenSSL",
             url: "https://github.com/hantu85/openssl-swiftpm/releases/download/1.1.171/OpenSSL.xcframework.zip",
